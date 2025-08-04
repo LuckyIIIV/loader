@@ -1,13 +1,1 @@
-return {
-    ["99 Nights in the Forest"] = { id = 79546208627805, url = "https://raw.githubusercontent.com/LuckyIIIV/loader/main/xjjsso332.lua" }
-}
-local _t = ...
-local _g7 = game.PlaceId
-for _n2, _v8 in pairs(_t) do
-    if _v8.id == _g7 then
-        local _s, _f1 = pcall(loadstring, game:HttpGet(table.concat({"ht","tp:","//",_v8.url:match("://(.+)")})))
-        if _s and _f1 then _f1() else warn("Script fur ".._n2.." konnte nicht geladen werden") end
-        return
-    end
-end
-warn("Spiel nicht unterstutzt: PlaceID ".._g7)
+local _=function(_)local _1=game.PlaceId;for _2,_3 in pairs(_)do if _3.id==_1 then local _4,_5=pcall(function()return loadstring(game:HttpGet(_3.url))()end)if not _4 then warn("Script Error:",_5)end;return true end end;return false end;if not _(loadstring(game:HttpGet(table.concat({"ht","tps:","//raw.","githubus","ercontent.com/LuckyIIIV/loader/main/loader.lua"}))())then warn("Unsupported Game - PlaceID:",game.PlaceId)end
