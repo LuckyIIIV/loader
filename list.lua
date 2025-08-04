@@ -1,1 +1,6 @@
-local _=function(_)local _1=game.PlaceId;for _2,_3 in pairs(_)do if _3.id==_1 then local _4,_5=pcall(function()return loadstring(game:HttpGet(_3.url))()end)if not _4 then warn("Script Error:",_5)end;return true end end;return false end;if not _(loadstring(game:HttpGet(table.concat({"ht","tps:","//raw.","githubus","ercontent.com/LuckyIIIV/loader/main/loader.lua"}))())then warn("Unsupported Game - PlaceID:",game.PlaceId)end
+return {
+    ["99 Nights in the Forest"] = {
+        id = 79546208627805, 
+        url = ""
+    }
+}
